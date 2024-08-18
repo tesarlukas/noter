@@ -38,7 +38,7 @@ const Home: NextPage = () => {
 
         <p className="my-12 text-center text-2xl leading-9">
           Tvůj kamarád při vytváření{" "}
-          <code className="rounded-md bg-gray-200 p-2 font-mono text-xl text-blue-700">
+          <code className="rounded-md bg-gray-200 p-2 font-mono text-xl text-blue-600">
             poznámek
           </code>
         </p>

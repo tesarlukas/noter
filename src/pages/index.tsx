@@ -1,3 +1,4 @@
+import Tiptap from "@/components/Tiptap";
 import { useGlobalShortcut } from "@/hooks/tauri/shortcuts";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -5,19 +6,6 @@ import Image from "next/image";
 import { useCallback } from "react";
 
 const Home: NextPage = () => {
-  //const [buttonDesc, setButtonDesc] = useState<string>(
-  //  "Waiting to be clicked. This calls 'on_button_clicked' from Rust.",
-  //);
-  //const onButtonClick = () => {
-  //  invoke<string>("on_button_clicked")
-  //    .then((value) => {
-  //      setButtonDesc(value);
-  //    })
-  //    .catch(() => {
-  //      setButtonDesc("Failed to invoke Rust command 'on_button_clicked'");
-  //    });
-  //};
-  //
   const shortcutHandler = useCallback(() => {
     console.log("Ctrl+P was pressed!");
   }, []);
@@ -42,6 +30,9 @@ const Home: NextPage = () => {
             poznámek
           </code>
         </p>
+        <div className="container">
+          <Tiptap />
+        </div>
       </main>
 
       <footer className="flex flex-1 flex-grow-0 items-center justify-center border-t border-gray-200 py-4">
